@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Small Scale Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Your Hospital Name</h1>
+            </div>
+            <nav>
+                <ul class="dropdown">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Services</a>
+                        <ul>
+                            <li><a href="#">General Consultation</a></li>
+                            <li><a href="#">Emergency Care</a></li>
+                            <li><a href="#">Maternity Services</a></li>
+                            <li><a href="#">Pediatric Care</a></li>
+                            <li><a href="#">Diagnostic Services</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="slider-container">
+            <div class="slide fade">
+                <img src="images/slide1.jpg" alt="Hospital Interior">
+            </div>
+            <div class="slide fade">
+                <img src="images/slide2.jpg" alt="Medical Team">
+            </div>
+            <div class="slide fade">
+                <img src="images/slide3.jpg" alt="Patient Care">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Your Friendly Neighborhood Hospital</h1>
+            <p>Providing quality healthcare with compassion and care.</p>
+            <a href="#booking" class="button">Book an Appointment</a>
+        </div>
+    </section>
+
+    <section id="booking" class="section">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <select id="department" name="department">
+                        <option value="general">General Consultation</option>
+                        <option value="emergency">Emergency Care</option>
+                        <option value="maternity">Maternity Services</option>
+                        <option value="pediatrics">Pediatric Care</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (Optional):</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="button">Submit Booking</button>
+                <p class="form-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>General Consultation</h3>
+                    <p>Comprehensive check-ups and medical advice for all your health concerns.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency services for immediate medical attention.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Maternity Services</h3>
+                    <p>Complete care for mothers and newborns, from prenatal to postnatal stages.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Pediatric Care</h3>
+                    <p>Specialized medical care for infants, children, and adolescents.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Diagnostic Services</h3>
+                    <p>Advanced laboratory and imaging services for accurate diagnosis.</p>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="location" class="section">
+        <div class="container">
+            <h2>Hospital Location</h2>
+            <p>Find us at [Your Hospital Address Here].</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.860299832693!2d36.81564777489224!3d-1.2832537987188716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b979f96!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1712071286401!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@yourhospital.com</p>
+                <p>Phone: +254 XXX XXX XXX</p>
+            </div>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/YourHospital" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/YourHospital" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <div class="payment-methods">
+                <h3>Payment Methods</h3>
+                <p>We accept [List accepted payment methods, e.g., Cash, Credit Cards, Mobile Money].</p>
+                </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Your Small Scale Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
